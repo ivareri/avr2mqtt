@@ -5,7 +5,7 @@ After=network-online.target mosquitto.service
 [Service]
 Type=simple
 User=avr2mqtt
-ExecStart=/opt/avr2mqtt/avr2mqtt.py
+ExecStart=/opt/avr2mqtt/avr2mqtt/avr2mqtt.py
 Restart=on-failure
 
 [Install]
