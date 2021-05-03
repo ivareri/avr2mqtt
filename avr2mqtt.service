@@ -1,0 +1,12 @@
+[Unit]
+Description=AVR2MQTT service
+After=network-online.target mosquitto.service
+
+[Service]
+Type=simple
+User=avr2mqtt
+ExecStart=/opt/avr2mqtt/avr2mqtt.py
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
