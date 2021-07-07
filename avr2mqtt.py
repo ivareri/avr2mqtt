@@ -331,7 +331,7 @@ class MQTT:
 
 
 print("Init AVR")
-avr = AVR('/dev/ttyUSB1')
+avr = AVR('/dev/avr2808')
 print("Connecting")
 avr.connect()
 print("connected to: " + avr.port)
